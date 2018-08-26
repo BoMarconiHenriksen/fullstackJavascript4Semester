@@ -67,14 +67,14 @@ console.log(o.a, o.f(), o.g(), o.h()); // 37,37, azerty, azerty
 
 
 // I browsere er window objektet også det globale objekt dvs uden for en funktion referer this til det globale objekt.
-console.log(this === window); // true
+// console.log(this === window); // true
 
-a = 37;
+/* a = 37;
 console.log(window.a); // 37
 
 this.b = "MDN";
 console.log(window.b)  // "MDN"
-console.log(b)
+console.log(b) */
 
 
 /* I en funktion afhænger værdien af this af hvordan funktionen bliver kaldt. */
@@ -86,7 +86,7 @@ function f1() {
 }
 
 // In a browser:
-f1() === window; // true 
+// f1() === window; // true 
 
 // In Node:
 f1() === global; // true
@@ -122,6 +122,8 @@ function whatsThis() {
 whatsThis();          // 'Global'
 whatsThis.call(obj);  // 'Custom'
 whatsThis.apply(obj); // 'Custom'
+
+// * * * * * * *
 
 // https://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/
 // this
@@ -186,7 +188,46 @@ For det meste har this værdien fra det kaldte objekt. Dog er der omstændighede
 
 /* 
 BRUGEN AF this I DET GLOBALE SCOPE
+I det globale scope, når koden bliver executed i browseren, er alle globale variabler og funktioner defined 
+på window objektet. Derfor når vi bruger this i en global funktion, så referer den til(og har værdien af) det globale
+objekt(dog ikke i strick mode), som er container af hele javascript applikationen eller websiden.
+Derfor: 
+*/
 
+var firstName = "Peter",
+  lastName = "Ally";
+
+function showFullName() {
+  // "this" inde i funktionen har værdien af window objektet
+  // da showFullName() funktonen er defineret i det globale scope, ligesom firstName og lastName.
+  console.log(this.firstName + " " + this.lastName);
+}
+
+var person = {
+  firstName: "Penelope",
+  lastName: "Barrymore",
+  showFullName: function () {
+    // "this" referer til person objektet, da showFullName funktionen vil blive invoked af person objektet.
+    console.log(this.firstName + " " + this.lastName);
+  }
+}
+
+showFullName(); // Peter Ally
+
+// window er det objekt som alle globale variabler og funktioner er defined på
+window.showFullName(); // Peter Ally
+
+// this inde i showFullName() funktionen som er defined inde i person objektet referer stadig til person objektet.
+person.showFullName(); // Penelope Barrymore
+
+/* 
+Når this er mest misforstået og bliver tricky
+this er mest misforstået når vi låner en funktion, der bruger this,
+når vi assigner en funktion, der bruger this til en variable,
+når en funktion, der bruger this is passed som en callback funktion, og
+når this bliver brugt inde i en closure - en inner function.
+
+Lidt om "context"
 */
 
 

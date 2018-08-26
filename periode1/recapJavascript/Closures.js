@@ -145,7 +145,36 @@ savePersonInfo.setFirstName("Bob");
 savePersonInfo.setAge(431);
 savePersonInfo.getInfo();
 
+// Eksempel på closure med getter og setter for en var variabel
 
+var drink = "wine";
+
+var foo = function(){
+   var drink = "beer";
+
+   return {
+       getDrink: function(){return drink},
+       setDrink: function(drnk){drink = drnk; return drink;}
+   };
+};
+
+var bar = foo()
+
+console.log( drink );  //wine
+console.log( bar.getDrink() ); //beer
+console.log( bar.setDrink("juice") );  //juice
+
+
+// https://stackoverflow.com/questions/4862193/difference-between-variable-declaration-syntaxes-in-javascript-including-global/4862268#4862268
+var ferie = "Italien";
+
+function hvorHoldesFerie() {
+    console.log(ferie);
+}
+
+hvorHoldesFerie();
+Window.ferie = ferie;
+// console.log(Window.ferie);
 
 
 
