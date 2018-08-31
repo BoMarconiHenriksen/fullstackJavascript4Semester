@@ -95,8 +95,8 @@ For at få en files type(dvs det efter . eks. .txt), så findes der et modul, de
 hedder path som man kan bruge.
 */
 
-/* var fs = require('fs')
-var path = require('path')
+/* const fs = require('fs')
+const path = require('path')
 
 // 3. og 4. index af det globale process objekt får hver sin variabel.
 var folder = process.argv[2]
