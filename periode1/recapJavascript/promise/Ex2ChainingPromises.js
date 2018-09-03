@@ -1,4 +1,5 @@
 /* 
+Promise ex. 2
 Now, Implement a method getPlanetforFirstSpeciesInFirstMovieForPerson(id){} which for id = 1 (Luke Skywalker) should log this info:
 
 Name: Luke Skywalker
@@ -86,6 +87,10 @@ Make sure to implement proper error handling when you test the method.
     console.log(err);
   }
 }
+
+
+
+// * * * * * * *
 
 let starWarsInfo2 = getPlanetforFirstSpeciesInFirstMovieForPersonAsync(1);
 starWarsInfo2.then(function(result) {
