@@ -30,6 +30,7 @@ require("crypto").randomBytes(48, function(err, buffer) {
         } else {
           let secureHex2 = buffer.toString("hex");
           console.log(secureHex2);
+          
           // callback til funktion der sætter resultater ind i et objekt
   
         }
