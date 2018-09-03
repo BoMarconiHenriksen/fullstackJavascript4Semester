@@ -18,14 +18,34 @@ In this exercise you must create a design to produce an object with 6 secure ran
 The 6 strings must be presented in the order given.
 */
 
-//   Nodes built in crypto module. The asynchronous version.
-require("crypto").randomBytes(SIZE, function(err, buffer) {
-  let secureHex = buffer.toString("hex");
-});
+require("crypto").randomBytes(48, function(err, buffer) {
+    if (err) {
+      console.log("ERROR!!!");
+    } else {
+      let secureHex = buffer.toString("hex");
+      console.log(secureHex);
+      require("crypto").randomBytes(40, function(err, buffer) {
+        if (err) {
+          console.log("ERROR2");
+        } else {
+          let secureHex2 = buffer.toString("hex");
+          console.log(secureHex2);
+          // callback til funktion der sætter resultater ind i et objekt
+  
+        }
+      });
+    }
+  });
+  
+  function resultObject(secureHex1, secureHex2) {
+    let randoms {[
+      {},
+    ]}
+  }
 
 
 
-function secureNumbers(callback) {
+/* function secureNumbers(callback) {
   randomBytes(48, function(x) {
     randomBytes(48, function(y) {
         addResultsToArray(x, y, function(result) {
@@ -36,4 +56,4 @@ function secureNumbers(callback) {
         })
     });
   });
-}
+} */
