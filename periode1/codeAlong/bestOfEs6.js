@@ -141,5 +141,35 @@ var foo = (a, b) => {
     return a + b;
 }
 
-// generator functions
+// Arrow function - When passing functions as arguments.
+do.something(function(a, b) {
+    return a + b;
+})
+
+// Ser nu sådan her ud.
+do.something((a, b) => {
+    return a + b;
+})
+
+// Arrow function with implicit return in a oneliner.
+do.something((a, b) => a + b)
+
+// Arrow function with implicit return in a oneliner with only one argument.
+do.something(a => a++);
+
+// Ovenstående eksempel.
+[0, 1, 2].map(val => val++); // [1, 2, 3]
+
+// Arrow function automatically binds contex to this.
+var module = {
+    age: 30,
+    foo: function() {
+        setTimeout(() => {
+            console.log(this.age);
+        }, 1000);
+    }
+}
+
+// module
+
 

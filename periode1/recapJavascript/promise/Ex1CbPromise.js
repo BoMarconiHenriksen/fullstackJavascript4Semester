@@ -18,44 +18,57 @@ In this exercise you must create a design to produce an object with 6 secure ran
 The 6 strings must be presented in the order given.
 */
 
-/* function secureNumbers(callback) {
-  randomBytes(48, function(x) {
-    randomBytes(48, function(y) {
-      addResultsToArray(x, y, function(result) {
-        let allNumbers = [];
-        allNumbers.push.x;
-        allNumbers.push.y;
-        console.log(allNumbers);
-      });
-    });
-  });
-}
- */
+  var secureNumberObject = {
+    title: "6 Secure Randoms",
+    randoms: [
+      { length: 48, random: "" },
+      { length: 40, random: "" },
+      { length: 32, random: "" },
+      { length: 24, random: "" },
+      { length: 16, random: "" },
+      { length: 8, random: "" }
+    ]
+  }
+  
 //   Nodes built in crypto module. The asynchronous version.
+ 
 require("crypto").randomBytes(48, function(err, buffer) {
   if (err) {
     console.log("ERROR!!!");
   } else {
     let secureHex = buffer.toString("hex");
-    console.log(secureHex);
+
+    secureNumberObject.randoms[0].random = secureHex;
+    console.log('OBJECT ' + Object.values(secureNumberObject.randoms[0]));
     require("crypto").randomBytes(40, function(err, buffer) {
       if (err) {
         console.log("ERROR2");
       } else {
         let secureHex2 = buffer.toString("hex");
-        console.log(secureHex2);
-        // callback til funktion der sætter resultater ind i et objekt
-
+        secureNumberObject.randoms[1].random = secureHex2;
+        console.log('OBJECT2 ' + Object.values(secureNumberObject.randoms[1]));
       }
     });
   }
-});
+}); 
 
-function resultObject(secureHex1, secureHex2) {
-  let randoms {[
-    {},
-  ]}
+
+/* 
+Use es2015 Promises to solve the problem.
+Hints: 
+Create a function makeSecureRandom(size) that returns a promise, using the callback based design,
+provided by the randomBytes(..) method.
+Since the result from one calculation does not influence the next (only order matters), 
+use Promise.all(..) to execute the operations in parallel.
+*/
+
+function makeSecureRandom() {
+  
 }
+
+let promiseArray = { makeSecureRandom(48) }
+
+
 
 // Eksempel på callback hell
 function compute_first_parameter(cb) {
