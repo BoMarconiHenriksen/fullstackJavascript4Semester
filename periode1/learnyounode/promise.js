@@ -8,7 +8,7 @@ const pathToDir = process.argv[2]; // Stien til det vi vil have fat i.
 const filterPath = '.' + process.argv[3];
 const ext = '.' + process.argv[3];
 
-/* fs.readdir(pathToDir, (err, data) => {
+fs.readdir(pathToDir, (err, data) => {
     if(err) {
         throw new Error("UPS")
     }
@@ -17,17 +17,17 @@ const ext = '.' + process.argv[3];
             console.log(files);
         }
     })
-}); */
+}); 
 
 
 
 // Lav det 
-var files = readDirFiltered(pathToDir, ext, (err, data) => {
+/* var files = readDirFiltered(pathToDir, ext, (err, data) => {
     if(err) {
         throw new Error("UPS")
     }
     console.log(data);
-})
+}) */
 
 
 // Lav det som promise uden callback. 
