@@ -30,6 +30,57 @@ console.log("x er " + x + " y er " + y);
 var y = 7;
 
 // this in JavaScript and how it differs from what we know from Java/.net.
+// call
+let person1 = { firstName: "Jon", lastName: "Kuperman" };
+let person2 = { firstName: "Kelly", lastName: "King" };
+
+function sayUndefined() {
+  console.log(this.firstName + " " + this.lastName);
+}
+
+/* function say(greeting) {
+    console.log(greeting + " " + this.firstName + " " + this.lastName);
+  }  */
+
+sayUndefined(person1, "Hello"); // undefined undefined - this referer til det globale objekt.
+
+say.call(person1, "Hello"); // Hello Jon Kuperman
+say.call(person2, "Hello"); // Hello Kelly King
+
+// apply
+let person1 = { firstName: "Jon", lastName: "Kuperman" };
+let person2 = { firstName: "Kelly", lastName: "King" };
+
+function say(greeting) {
+  console.log(greeting + " " + this.firstName + " " + this.lastName);
+}
+
+say.apply(person1, ["Hello"]); // Hello Jon Kuperman
+say.apply(person2, ["Hello"]); // Hello Kelly King
+
+// Brug apply til at lægge et array sammen med et eksisterende array.
+let array = ["a", "b"];
+let elements = [0, 1, 2];
+array.push.apply(array, elements);
+console.info(array); // ["a", "b", 0, 1, 2]
+
+//bind
+let person1 = { firstName: "Jon", lastName: "Kuperman" };
+let person2 = { firstName: "Kelly", lastName: "King" };
+
+function say() {
+  console.log("Hello " + this.firstName + " " + this.lastName);
+}
+
+let sayHelloJon = say.bind(person1);
+let sayHelloKelly = say.bind(person2);
+
+sayHelloJon(); // Hello Jon Kuperman
+sayHelloKelly(); // Hello Kelly King
+
+
+
+
 // Function Closures and the JavaScript Module Pattern
 // variable personInfo = anonym funktion som kan returner 3 funktioner
 let personInfo = function() {
@@ -234,6 +285,7 @@ console.log(liArray); // [ '<li>30</li>', '<li>40</li>', '<li>50</li>' ]
 // Arrow function har lexical scope.
 
 // I es5 kan this give problem. Kan løses med bind()
+// Uden for funktionen referer this til det globale objekt.
 var bunny = {
   name: "Usagi",
   tasks: ["transform", "eat cake", "blow kisses"],
