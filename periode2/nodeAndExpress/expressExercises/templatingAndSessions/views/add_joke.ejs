@@ -1,0 +1,33 @@
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <h1>
+        <%= title %>
+    </h1>
+    <p>Welcome to
+        <%= title %>
+    </p>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <br>
+
+        <p>There are
+            <%= countJokes %>
+        </p>
+
+        <form action="/add_joke/" method="post">
+            Add a joke:<br>
+            <input name="theNewJoke" type="text"><br>
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+
+    </ul>
+</body>
+
+</html>
