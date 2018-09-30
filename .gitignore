@@ -2,6 +2,10 @@
 # Created by 
 https://www.gitignore.io/api/macos,windows,netbeans,reactnative,webstorm+all,visualstudiocode
 
+# Ignore this file.
+/variables.env
+*.env
+
 ### macOS ###
 *.DS_Store
 .AppleDouble
