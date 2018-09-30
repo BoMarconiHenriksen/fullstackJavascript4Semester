@@ -1,3 +1,4 @@
+// Test via http API
 let expect = require("chai").expect;
 let request = require("request");
 
