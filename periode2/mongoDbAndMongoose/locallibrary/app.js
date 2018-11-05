@@ -20,7 +20,7 @@ require('dotenv').config({
 var mongoose = require('mongoose');
 //var mongoDB = '#';
 //mongoose.connect(mongoDB);
-mongoose.connect(process.env.DATABASE);
+mongoose.connect(process.env.DATABASE, {useNewUrlParser: true});
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:')); // err bliver logget til consolen.
