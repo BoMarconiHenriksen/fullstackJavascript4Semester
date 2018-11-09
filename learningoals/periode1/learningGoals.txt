@@ -1,0 +1,131 @@
+Explain and Reflect:
+Explain differences between Java and JavaScript. You should include both topics related to the fact that Java is a compiled language and JavaScript a scripted language, and general differences in language features.
+Java
+Sprog med højt abstraktionsnivea kompileres ned til et lavt abstraktionsniveau. 
+Java har typer.
+Java applikationer kan kører i ethvert JVM(Java Virtual Machine) miljø.
+Objekter er klasse baseret, så vi kan ikke lave objekter uden at lave en klasse.
+Java fil extention hedder .java. Koden oversættes til bytes og udføres af JVM.
+Java er trådbaseret.
+I Java kan vi give objekter med som parameter.
+I Java kan vi returner objekter fra metoder.
+
+JavaScript
+Js har en engine(v8), der udfører koden med det samme.
+Js har ikke typer. 
+Js kører typisk i browseren eller i applikationer, der har embedded V8 engine.
+I js er objekter prototype baseret dvs alle objekter kan arve properties og metoder fra en prototype.
+Js fil extention hedder .js. Kompiles ikke, men en interpretter udfører koden med det samme.
+Js er event baseret dvs har en main tråd. Det er containeren der giver asynkronitet(tråde).
+I js kan vi give funktioner med som parameter.
+I js kan vi returner funktioner fra metoder.
+Er skrevet i Anki.
+
+
+Explain the two strategies for improving JavaScript: ES6 (es2015) + ES7, versus Typescript. What does it require to use these technologies: In our backend with Node and in (many different) Browsers
+Forskellige udgaver af js, som ikke suportes af alle browsere.
+Bruge transpilere så alle browsere kan læse din kode f.eks. Babel. (oversætter de nye features til ES5, så alle browsere forstår koden).
+Typescript: Superset af js. 
+Har de nyeste features fra js med. 
+Transpiler, type check og extra features som private, interface, optional variabler. 
+Gør js mere objekt orienteret.
+Ikke skrevet ind i Anki.
+
+
+Explain generally about node.js, when it “makes sense” and npm, and how it “fits” into the node echo system.
+c++ container, der har embedded V8 engine, så du kan kører js på server siden. 
+Let at skaler. 
+En hurtig backend.
+Behøver ikke at bekymre sig om tråde.
+God til applikationer, der ikke er cpu krævende som chat server, web server, REST server streaming server ect. 
+NPM(Node Package Manager): (Skrevet ind i Anki)
+Et comand line interface til at tilføje packages til din applikation. (Skrevet ind i Anki)
+Det kan være tools, css libraries eller du kan dele din kode. (Skrevet ind i Anki)
+
+
+Explain about the Event Loop in Node.js
+stack
+web api / c++ api(Node)
+callback kø
+event loop
+http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D
+
+
+RED: Explain (some) of the purposes with the tools Babel and WebPack, using  examples from the exercises
+Babel: Er en transpiler, der kan transpilere nyere ES6 og ES7 fetaures til ES5 så alle browsere kan køre din kode.
+Webpack: Bygge og bundle værktøj. 
+Build - transpiler.
+Bundle - Alle filer bundles til en fil, og der laves en dependdency graph.
+Ekstra features:
+Build server.
+Lazy loading - split din kode og load kode når der trykkes på en button.
+Skrevet ind i Anki.
+
+Explain the purpose of “use strict” and Linters, exemplified with ESLint 
+
+
+Explain using sufficient code examples the following features in JavaScript. 
+Variable/function-Hoisting
+
+
+this in JavaScript and how it differs from what we know from Java/.net.
+
+
+Function Closures and the JavaScript Module Pattern
+
+
+RED: Immediately-Invoked Function Expressions (IIFE)
+
+
+JavaScripts Prototype
+
+
+User defined Callback Functions (writing your own functions that takes a callback)
+
+
+Explain the methods map, filter and reduce
+
+
+Provide examples of user defined reusable modules implemented in Node.js
+
+
+ES6-7 and TypeScript
+Provide examples and explain the es2015 features: let, arrow functions, this, rest parameters, de-structuring assignments, maps/sets etc.
+
+
+Explain and demonstrate how es2015 supports modules (import and export) similar to what is offered by NodeJS.
+
+
+Provide an example of ES6 inheritance and reflect over the differences between Inheritance in Java and in ES6.
+
+
+RED: Provide examples with es6, running in a browser, using Babel and Webpack
+
+
+Provide an number of examples to demonstrate the benefits of using TypeScript, including, types, interfaces, classes and generics
+
+Callbacks, Promises and async/await
+Explain about promises in ES-6 including, the problems they solve, a quick explanation of the Promise API and:
+
+
+Example(s) that demonstrate how to avoid the callback hell  (“Pyramid of Doom")
+
+
+Example(s) that demonstrate how to execute asynchronous (promise-based) code in serial or parallel
+
+
+Example(s) that demonstrate how to implement our own promise-solutions.
+
+
+Example(s) that demonstrate error handling with promises
+
+Explain about JavaScripts async/await, how it relates to promises and reasons to use it compared to the plain promise API.
+
+Provide examples to demonstrate 
+Why this often is the preferred way of handling promises
+
+
+Error handling with async/await
+
+
+Serial or parallel execution with async/await.
