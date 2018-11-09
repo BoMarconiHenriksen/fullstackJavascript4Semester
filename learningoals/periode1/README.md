@@ -8,14 +8,13 @@ TODO: SPLIT THE EXAMPLES IN TO SMALL FILES AND UPDATE THE README FILE.
 | Java | JavaScript |
 | :-------------: |:-------------:|
 | Højt abstraktionsnivea - kompileres. | Engine(v8) - udfører koden med det samme. |
-Højt abstraktionsnivea - kompileres. 
-Typer.  
-JVM(Java Virtual Machine).  
-Objekter er klasse baseret.  
-.java - oversættes til bytes og udføres af JVM.  
-Trådbaseret.  
-Objekter som parameter.  
-Returner objekter fra metoder.  
+Typer.  | Js har ikke typer.
+JVM(Java Virtual Machine).  | Browseren eller i applikationer.
+Objekter er klasse baseret.  | Objekter prototype baseret. 
+.java - oversættes til bytes og udføres af JVM.  | .js - Kompiles ikke - interpretter.
+Trådbaseret.  |  Js er event baseret. 
+Objekter som parameter.  | Funktioner med som parameter. 
+Returner objekter fra metoder.  | Returner funktioner fra metoder.
 
 ##### JavaScript
 Engine(v8) - udfører koden med det samme.  
