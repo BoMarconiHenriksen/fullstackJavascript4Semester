@@ -5,7 +5,9 @@ TODO: SPLIT THE EXAMPLES IN TO SMALL FILES AND UPDATE THE README FILE.
 #### Explain and Reflect:
 ##### Explain differences between Java and JavaScript. You should include both topics related to the fact that Java is a compiled language and JavaScript a scripted language, and general differences in language features.
 
-##### Java
+| Java | JavaScript |
+| :-------------: |:-------------:|
+| Højt abstraktionsnivea - kompileres. | Engine(v8) - udfører koden med det samme. |
 Højt abstraktionsnivea - kompileres. 
 Typer.  
 JVM(Java Virtual Machine).  
