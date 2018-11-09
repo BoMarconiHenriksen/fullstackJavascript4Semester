@@ -27,6 +27,9 @@ Returner objekter fra metoder.  | Returner funktioner fra metoder.
 2. Transpiler, type check og extra features som private, interface, optional variabler.  
 3. Gør js mere objekt orienteret.  
 
+##### Hvad kræver det for at kunne køre js?
+En c++ container, hvor V8 engine er embedded.
+
 ---
 
 #### Explain generally about node.js, when it “makes sense” and npm, and how it “fits” into the node echo system.
