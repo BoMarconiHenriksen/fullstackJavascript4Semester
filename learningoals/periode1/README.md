@@ -67,3 +67,110 @@ http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb2
 5. Minificer.
 6. Build server.
 7. Lazy loading.
+
+---
+
+#### Explain the purpose of “use strict” and Linters, exemplified with ESLint 
+##### Linters 
+1. Standadiser kode.  
+
+##### "use strict"
+Gør debugging lettere.  
+Fejl, som ikke kaster exceptions vil nu kaste exceptions.  
+
+Hvordan bruges use strict i fil/funktion?  
+Hvorfor er det en string?  
+
+Se eksempler i useStrict.js.  
+
+---
+
+#### Explain using sufficient code examples the following features in JavaScript. 
+#### Variable/function-Hoisting.  
+
+
+---
+
+#### this in JavaScript and how it differs from what we know from Java/.net.  
+
+---
+
+#### Function Closures and the JavaScript Module Pattern.  
+
+---
+
+#### RED: Immediately-Invoked Function Expressions (IIFE).  
+
+---
+
+#### JavaScripts Prototype.  
+
+---
+
+#### User defined Callback Functions (writing your own functions that takes a callback).  
+
+---
+
+#### Explain the methods map, filter and reduce.  
+
+---
+
+#### Provide examples of user defined reusable modules implemented in Node.js.  
+
+---
+
+#### ES6-7 and TypeScript  
+#### Provide examples and explain the es2015 features: let, arrow functions, this, rest parameters, de-structuring assignments, maps/sets etc.  
+
+---
+
+#### Explain and demonstrate how es2015 supports modules (import and export) similar to what is offered by NodeJS.  
+
+---
+
+#### Provide an example of ES6 inheritance and reflect over the differences between Inheritance in Java and in ES6.  
+
+---
+
+#### RED: Provide examples with es6, running in a browser, using Babel and Webpack.  
+
+---
+
+#### Provide an number of examples to demonstrate the benefits of using TypeScript, including, types, interfaces, classes and generics.  
+---
+
+#### Callbacks, Promises and async/await.  
+#### Explain about promises in ES-6 including, the problems they solve, a quick explanation of the Promise API and:  
+
+---
+
+#### Example(s) that demonstrate how to avoid the callback hell  (“Pyramid of Doom").  
+
+---
+
+#### Example(s) that demonstrate how to execute asynchronous (promise-based) code in serial or parallel.  
+
+---
+
+#### Example(s) that demonstrate how to implement our own promise-solutions.  
+
+---
+
+#### Example(s) that demonstrate error handling with promises.  
+
+---
+
+#### Explain about JavaScripts async/await, how it relates to promises and reasons to use it compared to the plain promise API.  
+
+---
+
+#### Provide examples to demonstrate 
+#### Why this often is the preferred way of handling promises.  
+
+---
+
+#### Error handling with async/await.    
+
+---
+
+#### Serial or parallel execution with async/await.  
