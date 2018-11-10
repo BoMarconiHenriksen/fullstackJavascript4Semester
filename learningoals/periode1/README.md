@@ -75,11 +75,11 @@ http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb2
 1. Standadiser kode.  
 
 ##### "use strict"
-Gør debugging lettere.  
+1. Gør debugging lettere.  
 Fejl, som ikke kaster exceptions vil nu kaste exceptions.  
 
-Hvordan bruges use strict i fil/funktion?  
-Hvorfor er det en string?  
+2. Hvordan bruges use strict i fil/funktion?  
+3. Hvorfor er det en string?  
 
 Se eksempler i useStrict.js.  
 
@@ -87,7 +87,13 @@ Se eksempler i useStrict.js.
 
 #### Explain using sufficient code examples the following features in JavaScript. 
 #### Variable/function-Hoisting.  
+Muligt at deklarer en variabel efter den er brugt.  
 
+1. Deklarering løftes op. Tildeling kommer ikke med.
+
+##### Løsning
+1. Deklarer i toppen.
+2. Brug let og const.
 
 ---
 
