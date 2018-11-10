@@ -63,6 +63,7 @@ http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb2
 1. Bygge og bundle værktøj. 
 2. Build - transpiler.
 3. Bundle - Alle filer bundles til en fil, og der laves en dependency graph.
-4. Ekstra features
-5. Build server.
-6. Lazy loading.
+4. Ekstra features f.eks.
+5. Minificer.
+6. Build server.
+7. Lazy loading.
