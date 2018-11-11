@@ -100,7 +100,7 @@ Muligt at deklarer en variabel efter den er brugt.
 #### this in JavaScript and how it differs from what we know from Java/.net.  
 | Java | JavaScript |
 | :-------------: |:-------------:|
-| Klassebaseret. | Prototype baseret. |
+| Klassebaseret | Prototype baseret |
 
 ##### this i Java
 I java referer this altid til objektet.  
@@ -116,7 +116,7 @@ bishop2.move(); // this referer til objektet bishop2.
 ```
 ##### this i JavaScript
 Som udgangspunkt referer this til det globale objekt.  
-Se filen this.js  
+Se filen this.js for Javascript eksempler.  
 
 ---
 
