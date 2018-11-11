@@ -8,12 +8,12 @@ TODO: SPLIT THE EXAMPLES IN TO SMALL FILES AND UPDATE THE README FILE.
 | Java | JavaScript |
 | :-------------: |:-------------:|
 | Højt abstraktionsnivea - kompileres. | Engine(v8) - udfører koden med det samme. |
-Typer.  | Js har ikke typer.
+Typer.  | Js deklares typer ikke.
 JVM(Java Virtual Machine).  | Browseren eller i applikationer.
 Objekter er klasse baseret.  | Objekter prototype baseret. 
 .java - oversættes til bytes og udføres af JVM.  | .js - Kompiles ikke - interpretter.
 Trådbaseret.  |  Js er event baseret. 
-Objekter som parameter.  | Funktioner med som parameter. 
+Objekter som parameter.  | Funktioner som parameter. 
 Returner objekter fra metoder.  | Returner funktioner fra metoder.
 
 ---
@@ -98,6 +98,25 @@ Muligt at deklarer en variabel efter den er brugt.
 ---
 
 #### this in JavaScript and how it differs from what we know from Java/.net.  
+| Java | JavaScript |
+| :-------------: |:-------------:|
+| Klassebaseret. | Prototype baseret. |
+
+##### this i Java
+I java referer this altid til objektet.  
+this referer til objektet gennem den metode, der bliver kaldt.
+
+```
+// I en metode, der hedder move indgår følgende kode.  
+if(this.position == piece2.position)  
+    result = false;  
+
+bishop1.move(); // this referer til objektet bishop1.  
+bishop2.move(); // this referer til objektet bishop2.  
+```
+##### this i JavaScript
+Som udgangspunkt referer this til det globale objekt.  
+Se filen this.js  
 
 ---
 
