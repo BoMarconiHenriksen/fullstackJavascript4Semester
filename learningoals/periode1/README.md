@@ -118,6 +118,8 @@ bishop2.move(); // this referer til objektet bishop2.
 Som udgangspunkt referer this til det globale objekt.  
 Se filen this.js for Javascript eksempler.  
 
+For en løsning på udfordringen med this i JavaScript se filen thisApplyCallBind.js
+
 ---
 
 #### Function Closures and the JavaScript Module Pattern.  
