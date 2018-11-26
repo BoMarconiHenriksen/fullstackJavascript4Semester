@@ -1,0 +1,56 @@
+graphql.org
+
+INSTALL GRAPHQL IN NODE EXPRESS
+npm install --save express-graphql graphql
+npm install --save graphql-tools
+
+graphql er et querry language. 
+Du kan querry præcis det du vil have, og så får du det og ikke andet. 
+
+THE INITIAL GRAPHQL SETUP
+Create a new file and call it schema. 
+
+// resolver is a function that returns the data we need when we make a querry.
+const root = { hello: () => "Hi, I'm Manny"  };
+
+For at kunne lave graphql querys skal du definer et schema der definer en query type,
+ og en resolver for hver api endpoint. 
+
+Type definition definer, hvilke type data vi forventer og resolveren henter den data vi skal bruge.
+
+Alt i graphql er defineret med typer som i typescript. 
+
+! betyder at den skal udfyldes.
+email: [Email]!
+
+query er det som returneres. 
+
+mutations er graphql måde at lave nye data, ændre data eller update data. 
+
+scala types er basic types, der kommer med graphQL. Så behøver du ikke lave typen først(before hand). 
+
+Med scala types har du adgang til int, float, string, id(som er unik) og boolean. 
+
+enumeration types er giver dig mulighed for at specificer de data et felt (field) tager og restrick input til det du lister i enum type. 
+    Kan bruges når du skal begrænse, hvad der må skrives i et felt f.eks. ved køn. 
+
+resolver map hjælper med at mappe vores resolvers bedre.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
