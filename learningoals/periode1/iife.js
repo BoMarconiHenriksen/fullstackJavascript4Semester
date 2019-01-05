@@ -6,9 +6,12 @@
 // Der er ikke adgang til variablen uden for funktionens scope.
 (function () { 
     var aName = "Barry";
+    // console.log(aName); // Ok
 })();
 
-aName // throws "Uncaught ReferenceError: aName is not defined"
+// Kan bruges til ikke at forurene det globale variabel. 
+console.log(aName); // throws "Uncaught ReferenceError: aName is not defined"
+ 
 
 
 // Eksempel på iife.

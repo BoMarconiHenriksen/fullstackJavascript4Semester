@@ -142,9 +142,21 @@ En funktion der bliver til en expression og udføres med det samme.
 Det du definere i en funktion, eksisterer kun i den function blok.  
 Der er ikke adgang til variablen uden for funktionens scope.  
 
+Kan bruges til ikke at forurene det globale variabel.  
+
+Se iife.js  
+
 ---
 
 #### JavaScripts Prototype.  
+I Javascript er funktioner objekter.  
+Når en funktion laves så tilføjes et prototype objekt til funktionen <function>.prototype.  
+
+Vi kan tilføje funktioner til prototypen af et objekt.  
+
+En konstruktør funktion har en prototype property, der referer til et objekt.  
+Det objekt bliver prototypen til alle instancer, der bliver lavet med konstruktøren.  
+Vi kan tilføje nye funktioner og properties til det objekt som vil blive delt af alle instancer.  
 
 ---
 
