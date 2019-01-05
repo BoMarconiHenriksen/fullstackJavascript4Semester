@@ -122,7 +122,17 @@ For en løsning på udfordringen med this i JavaScript se filen thisApplyCallBin
 
 ---
 
-#### Function Closures and the JavaScript Module Pattern.  
+#### Function Closures and the JavaScript Module Pattern.
+##### Function Closure
+Closure er en funktion, der er inden i en anden funktion.  
+Den indre funktion kan referer til variabler fra den ydre funktion og globale variabler.  
+Normalt når en funktion bliver kaldt, og variablen er out of scope så slettes den. Beholder referance til variablen.  
+
+##### Module Pattern
+Kan bruges til private funktioner.
+Den anonyme funktion virker som en wrapper omkring de 3 indre funktioner, og derfor kan objektet ikke tilgås udefra. Det skal ske gennem de indre funktioner.  
+
+Se closureAndModulePattern.js  
 
 ---
 
