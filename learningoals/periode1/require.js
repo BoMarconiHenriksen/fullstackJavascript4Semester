@@ -1,5 +1,4 @@
-// The module to exercise: Defined reusable modules implemented in Node.js
-
-module.exports = function() {
-  console.log("Hello From module!");
+exports.greetingFromModule = function () {
+  let hello = 'Hello from module';
+  return hello;
 };

@@ -158,6 +158,8 @@ En konstruktør funktion har en prototype property, der referer til et objekt.
 Det objekt bliver prototypen til alle instancer, der bliver lavet med konstruktøren.  
 Vi kan tilføje nye funktioner og properties til det objekt som vil blive delt af alle instancer.  
 
+Se prototype.js  
+
 ---
 
 #### User defined Callback Functions (writing your own functions that takes a callback).  
@@ -167,13 +169,25 @@ Da alle funktioner i javascript er objekter kan funktioner tage andre funktioner
 
 Callbacks kan bruges til at sikre at kode ikke udføres før andet kode er kørt.  
 
+Se callback.js  
+
 ---
 
 #### Explain the methods map, filter and reduce.  
+Map - Tilføjer noget til hvert element i et array.  
+
+Filter - Returner et nyt array med de elementer, der er true.
+
+Reduce - Kører en reduce funktion(som du selv skriver) mod hvert element af et array og returner et enkelt tal.  
+
+Se mapFilterReduce.js  
 
 ---
 
 #### Provide examples of user defined reusable modules implemented in Node.js.  
+Importer et modul.  
+. er i samme folder.  
+.. en folder tilbage.
 
 ---
 
