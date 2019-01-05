@@ -129,7 +129,7 @@ Den indre funktion kan referer til variabler fra den ydre funktion og globale va
 Normalt når en funktion bliver kaldt, og variablen er out of scope så slettes den. Beholder referance til variablen.  
 
 ##### Module Pattern
-Kan bruges til private funktioner.
+Kan bruges til private funktioner.  
 Den anonyme funktion virker som en wrapper omkring de 3 indre funktioner, og derfor kan objektet ikke tilgås udefra. Det skal ske gennem de indre funktioner.  
 
 Se closureAndModulePattern.js  
@@ -137,6 +137,10 @@ Se closureAndModulePattern.js
 ---
 
 #### RED: Immediately-Invoked Function Expressions (IIFE).  
+En funktion der bliver til en expression og udføres med det samme.  
+
+Det du definere i en funktion, eksisterer kun i den function blok.  
+Der er ikke adgang til variablen uden for funktionens scope.  
 
 ---
 
