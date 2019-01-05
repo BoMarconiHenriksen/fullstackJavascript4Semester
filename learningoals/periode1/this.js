@@ -1,23 +1,21 @@
-/* 
-I Node er det globale scope for et modul selve modulet(sig selv).
-Så når du deklarer en variable i det globale scope,
- vil derfor være lokal for det modul.
-*/
-console.log(this);
 
+// Globale scope er selve modulet(sig selv)
+//console.log(this);
+
+// Vi kan sætte variabler på det globale scope. 
 /* this.tal = 1;
 console.log(this);
-console.log(this.tal); */
+console.log(this.tal); */ 
 
 // Når vi printer this inde fra en funktion referer den til det globale objekt.
-/*(function () {
-    // console.log(this);
+// (function () {
+    // console.log(this); // this --> globale objekt
 
-     this.name = "Hans";
-    console.log("this.name " + this.name);
-    console.log("global.name " + global.name);
-    console.log('name ' + name); 
-}());*/
+    /* this.name = "Hans"; 
+    console.log("this.name " + this.name); // this.name Hans
+    console.log("global.name " + global.name); // global.name Hans
+    console.log('name ' + name); */ // name Hans
+// }()); 
 
 // Peger this altid på det globale objekt? Nej...
 let car = {
@@ -26,13 +24,57 @@ let car = {
     }
 };
 
-// car.checkThis();
-// console.log(car); // this peger på car objektet.
+car.checkThis();
+console.log(car);  // this peger på car objektet.
+
+let myFunction = car.checkThis;
+myFunction(); // Det globale objekt.
+
+// this afhænger af hvordan funktionen bliver kaldt!
+
+
+
+
+// * * * * * * *
+
+/* 
+I Node er det globale scope for et modul selve modulet(sig selv).
+Så når du deklarer en variable i det globale scope,
+ vil derfor være lokal for det modul.
+*/
+
+// Globale scope er selve modulet(sig selv)
+//console.log(this);
+
+// Vi kan sætte variabler på det globale scope. 
+/* this.tal = 1;
+console.log(this);
+console.log(this.tal); */ 
+
+/* // Når vi printer this inde fra en funktion referer den til det globale objekt.
+(function () {
+    // console.log(this);
+
+    this.name = "Hans";
+    // console.log("this.name " + this.name); // this.name Hans
+    console.log("global.name " + global.name);
+    console.log('name ' + name); 
+}());  */
+
+// Peger this altid på det globale objekt? Nej...
+/* let car = {
+    checkThis: function () {
+        console.log(this);
+    }
+};
+
+car.checkThis();
+console.log(car); */ // this peger på car objektet.
 
 // Vi kan konkluder at...
 // this peger på objektet som funktionen er deklaret på... er det rigtigt?
-let myFunction = car.checkThis;
-myFunction(); // printer det globale objekt!
+// let myFunction = car.checkThis;
+// myFunction(); // printer det globale objekt!
 
 // Forvirende ja!
 // I js bliver this bestemt ud fra, hvordan funktionen bliver kaldt.
@@ -48,7 +90,7 @@ myFunction(); // printer det globale objekt!
 myFunction(); */
 
 // DET STORE PROBLEM! 2 funktioner i samme objekt.
-var horse = {
+/* var horse = {
     checkThis: function () {
         //"use strict"; // En løsning er at bruge strict mode, da det globale objekt ikke er default mere.
         console.log("FØRSTE KALD!! " + this);
@@ -58,13 +100,13 @@ var horse = {
         }
         checkOther();
     }
-};
+}; */
 
-horse.checkThis();
+// horse.checkThis();
 
 // use strict stopper this keywordet med at være det globale objekt.
 // En løsning kan være at stabilisere this med en variable som vi kalder self.
-let cow = {
+/* let cow = {
     checkThis: function () {
         let self = this; // Her er this ko objektet, og det bliver nu givet videre med variablen self.
         console.log(self);
@@ -76,6 +118,6 @@ let cow = {
         checkOther();
         console.log(self.moo);
     }
-};
+}; */
 
-cow.checkThis();
+// cow.checkThis();

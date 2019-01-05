@@ -193,6 +193,33 @@ Importer et modul.
 
 #### ES6-7 and TypeScript  
 #### Provide examples and explain the es2015 features: let, arrow functions, this, rest parameters, de-structuring assignments, maps/sets etc.  
+##### let
+Har block scope og hoistes ikke.  
+Kan ikke sættes på det globale scope.  
+
+Se let.js  
+##### Arrow functions
+Kortere syntaks og implicit return.  
+Arrow funktioner har ikke sin egen this(som almindelige funktioner). Binder derfor ikke this. Så vær opmærksom ved objekter.  
+Kan ikke bruges ved konstruktør.  
+
+Se arrowFunctions.js  
+##### this
+
+
+##### rest parameter
+Du kan tildele resten af variablerne til ...rest. Returners som array.  
+
+De må ikke have fået et separat navn.  
+Det er muligt at bruge map, sort og forEach på rest.  
+
+Se rest.js  
+
+##### de-structuring
+Pakke værdierne fra et array eller properties fra et objekt ud og lægge det i variabler.  
+rest parametere kan blive destructured(kun arrays) dvs resten af variablerne bliver lagt i en variabel.  
+
+Se deconstructuring.js
 
 ---
 

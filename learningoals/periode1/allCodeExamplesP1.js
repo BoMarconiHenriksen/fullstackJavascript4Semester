@@ -264,9 +264,10 @@ function letTest() {
     console.log(x);  // 2
   }
   console.log(x);  // 1
+}
 
 // ARROW FUNCTIONS
-var foo = function(a, b) {
+function plus(a, b) {
   return a + b;
 }
 
