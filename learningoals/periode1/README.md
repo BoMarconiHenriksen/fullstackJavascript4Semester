@@ -161,6 +161,11 @@ Vi kan tilføje nye funktioner og properties til det objekt som vil blive delt a
 ---
 
 #### User defined Callback Functions (writing your own functions that takes a callback).  
+En funktion, der tager en anden funktion som argument.  
+
+Da alle funktioner i javascript er objekter kan funktioner tage andre funktioner som argumenter og returner funktioner. Det kaldes higher order functions.  
+
+Callbacks kan bruges til at sikre at kode ikke udføres før andet kode er kørt.  
 
 ---
 
