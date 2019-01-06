@@ -1,3 +1,4 @@
+// Kun en default export per modul.
 export default function printMe() {
-    cosole.log('I get called from print.js!');
-  }
+    console.log('I get called from print.js! With default export.');
+  };

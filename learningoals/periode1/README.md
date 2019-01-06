@@ -224,6 +224,13 @@ Se deconstructuring.js
 ---
 
 #### Explain and demonstrate how es2015 supports modules (import and export) similar to what is offered by NodeJS.  
+Flere metoder exporteres fra samme modul eller en default export per modul.  
+
+Det er også muligt at importer med forkortelse.  
+
+Exporterede moduler er i strict mode.  
+
+Se consolen i webpack-demo.
 
 ---
 
