@@ -235,18 +235,40 @@ Se consolen i webpack-demo.
 ---
 
 #### Provide an example of ES6 inheritance and reflect over the differences between Inheritance in Java and in ES6.  
+##### Java klasse baseret. 
+En klasse(subclass) kan arve metoder og attributes fra en anden klasse(superclass).  
+
+##### Javascript prototype baseret.  
+Prototype chain. Muligt at linke et objekt til et andet, og dermed "arve" properties og metoder.  
+
+##### Es6 inheritance
+Er stadig prototype baseret, men ligner det vi ser i java. Er syntaktisk sukker.  
 
 ---
 
 #### RED: Provide examples with es6, running in a browser, using Babel and Webpack.  
+Se webpack-demo  
 
 ---
 
 #### Provide an number of examples to demonstrate the benefits of using TypeScript, including, types, interfaces, classes and generics.  
+##### Types
+
+##### Interface
+
+##### Classes
+
+Se typescript-demo  
 ---
 
 #### Callbacks, Promises and async/await.  
 #### Explain about promises in ES-6 including, the problems they solve, a quick explanation of the Promise API and:  
+
+##### Es6 promise
+Promises er et objekt, der bliver brugt ved asynkrone operationer.  
+Det er en lovning på, at på et tidspunkt returnes data eller en error.  
+
+
 
 ---
 

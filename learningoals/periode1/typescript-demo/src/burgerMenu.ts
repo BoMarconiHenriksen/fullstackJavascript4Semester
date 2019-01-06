@@ -4,7 +4,7 @@ var burger: string = "hamburger", // String
 
 function speak(food: string, energy: number): void {
     console.log('our ' + food + ' has ' + energy + ' calories');
-}
+};
 
 speak(burger, calories);
 
