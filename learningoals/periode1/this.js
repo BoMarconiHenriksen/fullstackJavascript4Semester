@@ -32,7 +32,7 @@ myFunction();  // Nodes globale objekt.
 
 // this afhænger af hvordan funktionen bliver kaldt!
 
-
+// LØSNING SE thisApplyCallBind.js
 
 
 // * * * * * * *

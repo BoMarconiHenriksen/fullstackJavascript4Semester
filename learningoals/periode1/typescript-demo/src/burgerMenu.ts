@@ -12,14 +12,14 @@ speak(burger, calories);
 interface food {
     name: string;
     calories: number;
-}
+};
 
 // Vi definer et objekt, som har all properties af food som interfacet forventer.
 // Vær opmærksom på at types udledes automatisk.
 var ice_cream = {
     name: "ice cream",
     calories: 200
-}
+};
 
 speak("ice_cream", 200);
 
@@ -35,7 +35,7 @@ class Menu {
         // Keywords er obligatorieske.
         this.items = item_list;
         this.pages = total_pages;
-    }
+    };
 
     // Metoder
     list(): void {
@@ -43,8 +43,8 @@ class Menu {
         for(var i=0; i<this.items.length>; i++) {
             console.log(this.items[i]);
         }
-    }
-}
+    };
+};
 
 // Lav en ny instance af Menu klassen.
 var sundayMenu = new Menu(['pancakes', 'orange juice'], 1);
@@ -61,7 +61,7 @@ class HappyMeal extends Menu {
         // I dette tilfælde vil vi gerne have den samme konstruktør som i Menu.
         // For automatisk at kopier den kan vi kalde super() - en referance til forældrens konstruktør.
         super(item_list, total_pages);
-    }
+    };
 
     // Ligesom properties så er metoderne også nedarvet.
     // Men vi vil gerne overskrive list() så vi redefiner den.
@@ -69,6 +69,6 @@ class HappyMeal extends Menu {
         console.log('Our special menu for children: ');
         for(var i = 0; i<this.items.length>; i++) {
             console.log(this.items[i]);
-        }
-    }
-}
+        };
+    };
+};

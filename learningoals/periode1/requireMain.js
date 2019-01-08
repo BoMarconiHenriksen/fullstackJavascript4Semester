@@ -2,7 +2,7 @@
 let hello = require('./require'); //Assigner vores module til dt.
 
 function sayHello() {
-    console.log(hello.greetingFromModule);
+    hello;
 };
 
 sayHello();

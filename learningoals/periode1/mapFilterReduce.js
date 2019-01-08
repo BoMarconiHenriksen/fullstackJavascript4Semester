@@ -29,6 +29,29 @@ function getSum(total, number) {
 
 // console.log("Reduce funktion, der lægger tal sammen: " + numbers.reduce(getSum));
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Reduce tæller her antallet af stemmer.
 var votes = [ "Clinton", "Trump", "Clinton", "Clinton", "Trump", "Trump", "Trump", "None" ];
 
@@ -36,13 +59,13 @@ var votes = [ "Clinton", "Trump", "Clinton", "Clinton", "Trump", "Trump", "Trump
 // Retur værdien af callbacken er det akkumulerede resultat(allVotes).
 // Det akkumulerede resultat bliver brugt som argument næste gang callback funktionen kaldes.
 // Værdien huskes for hver iteration.
-var countedNames = votes.reduce(function(allVotes, vote) {
+/* var countedNames = votes.reduce(function(allVotes, vote) {
   if (vote in allVotes) {
     allVotes[vote]++;
   } else {
     allVotes[vote] = 1;
   }
   return allVotes;
-}, {}); // Returner et objekt med allVotes.
+}, {}); */ // Returner et objekt med allVotes.
 
 // console.log(countedNames);
