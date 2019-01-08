@@ -15,16 +15,10 @@ let {firstName, lastName} = Person;
 // Array
 var foo = ['one', 'two', 'three'];
 
-var [one, two, three] = foo;
-/* console.log(one); // "one"
+/* var [one, two, three] = foo;
+console.log(one); // "one"
 console.log(two); // "two"
-console.log(three); */ // "three"
-
-// Tildel resten af et array til en variabel.
-// rest parametere kan blive destructured(kun arrays) dvs resten af variablerne bliver lagt i en variabel.
-let [a, ...b] = [1, 2, 3];
-// console.log(a); // 1
-// console.log(b); // [2, 3]
+console.log(three); */  // "three"
 
 // Eksempel på at bytte plads med dekonstruction.
 let e = "Første", f =  "Andet";

@@ -22,10 +22,11 @@ var materials = [
 
 
 // this.
-// En arrow funktion binder ikke this derfor er det ikke godt at bruge sammen med objekter.
+// En arrow funktion binder ikke this.
 const car = {
     model: 'Fiesta',
     manufacturer: 'Ford',
+    
     fullName: function() {
       return console.log(this.manufacturer + ' ' + this.model);  
     }
@@ -42,9 +43,9 @@ const carArrow = {
     }
   };
 
-// carArrow.fullName();
+// carArrow.fullName(); // undefined undefined
 
-// this går et scope op i denne closure, og bruge this som den finder der.
+// this går et scope op i dette eksempel, og bruge this som den finder der.
 var obj = {
     id: 42,
     counter: function counter() {

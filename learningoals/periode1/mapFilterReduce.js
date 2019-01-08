@@ -6,7 +6,7 @@ var uppercasedNames = names.map(function(uppercasedName) {
   return uppercasedName.toUpperCase();
 });
 
-console.log(uppercasedNames);
+// console.log(uppercasedNames);
 
 
 // Filter - Returner et nyt array med de elementer, der er true.
@@ -16,7 +16,8 @@ var lessThanThree = names.filter(function(name) {
   return name.length <= 3;
 });
 
-console.log("Normal filter method: " + lessThanThree);
+// console.log("Normal filter method: " + lessThanThree);
+
 
 // Reduce
 let numbers = [2, 3, 67, 33];
@@ -26,7 +27,7 @@ function getSum(total, number) {
   return total + number;
 };
 
-console.log("Reduce funktion, der lægger tal sammen: " + numbers.reduce(getSum));
+// console.log("Reduce funktion, der lægger tal sammen: " + numbers.reduce(getSum));
 
 // Reduce tæller her antallet af stemmer.
 var votes = [ "Clinton", "Trump", "Clinton", "Clinton", "Trump", "Trump", "Trump", "None" ];
@@ -44,4 +45,4 @@ var countedNames = votes.reduce(function(allVotes, vote) {
   return allVotes;
 }, {}); // Returner et objekt med allVotes.
 
-console.log(countedNames);
+// console.log(countedNames);

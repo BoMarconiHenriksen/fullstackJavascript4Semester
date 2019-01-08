@@ -38,8 +38,6 @@ function component() {
   btnAnother.onclick = anotherHello;
 
   element.appendChild(btnAnother);
-  
-
 
 
   // Add the image to our existing div.
@@ -48,9 +46,10 @@ function component() {
 
   element.appendChild(myIcon);
 
-  //   Testing if babel works.
-  const name = "Kurt Wonnegut";
-  setTimeout(() => alert(`Hello there from ${name}`), 1000);
+  
+  //   Testing if babel works. es6 arrow funktion.
+  const name = "Made with es6 arrow function!";
+  setTimeout(() => alert(`This was ${name}`), 1000);
 
   return element;
 }

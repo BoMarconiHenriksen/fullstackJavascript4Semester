@@ -1,34 +1,34 @@
 
 // Globale scope er selve modulet(sig selv)
-//console.log(this);
+// console.log(this);
 
-// Vi kan sætte variabler på det globale scope. 
+// Vi kan sætte variabler på det globale scope. ???
 /* this.tal = 1;
 console.log(this);
 console.log(this.tal); */ 
 
 // Når vi printer this inde fra en funktion referer den til det globale objekt.
-// (function () {
+(function () {
     // console.log(this); // this --> globale objekt
 
     /* this.name = "Hans"; 
     console.log("this.name " + this.name); // this.name Hans
     console.log("global.name " + global.name); // global.name Hans
-    console.log('name ' + name); */ // name Hans
-// }()); 
+    console.log('name ' + name); */  // name Hans
+}());
 
 // Peger this altid på det globale objekt? Nej...
 let car = {
     checkThis: function () {
         console.log(this);
     }
-};
+}; 
 
-car.checkThis();
-console.log(car);  // this peger på car objektet.
+// car.checkThis();
+// console.log(car);  // this peger på car objektet.
 
 let myFunction = car.checkThis;
-myFunction(); // Det globale objekt.
+myFunction();  // Nodes globale objekt.
 
 // this afhænger af hvordan funktionen bliver kaldt!
 
@@ -37,7 +37,7 @@ myFunction(); // Det globale objekt.
 
 // * * * * * * *
 
-/* 
+/*
 I Node er det globale scope for et modul selve modulet(sig selv).
 Så når du deklarer en variable i det globale scope,
  vil derfor være lokal for det modul.
@@ -49,7 +49,7 @@ Så når du deklarer en variable i det globale scope,
 // Vi kan sætte variabler på det globale scope. 
 /* this.tal = 1;
 console.log(this);
-console.log(this.tal); */ 
+console.log(this.tal); */
 
 /* // Når vi printer this inde fra en funktion referer den til det globale objekt.
 (function () {
@@ -58,7 +58,7 @@ console.log(this.tal); */
     this.name = "Hans";
     // console.log("this.name " + this.name); // this.name Hans
     console.log("global.name " + global.name);
-    console.log('name ' + name); 
+    console.log('name ' + name);
 }());  */
 
 // Peger this altid på det globale objekt? Nej...
@@ -111,7 +111,7 @@ myFunction(); */
         let self = this; // Her er this ko objektet, og det bliver nu givet videre med variablen self.
         console.log(self);
 
-        function checkOther() { 
+        function checkOther() {
             console.log(self);
             self.moo = 1;
         }

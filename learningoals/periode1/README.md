@@ -169,6 +169,8 @@ Da alle funktioner i javascript er objekter kan funktioner tage andre funktioner
 
 Callbacks kan bruges til at sikre at kode ikke udføres før andet kode er kørt.  
 
+En af måderne til at håndtere asynckronitet.  
+
 Se callback.js  
 
 ---
@@ -217,7 +219,6 @@ Se rest.js
 
 ##### de-structuring
 Pakke værdierne fra et array eller properties fra et objekt ud og lægge det i variabler.  
-rest parametere kan blive destructured(kun arrays) dvs resten af variablerne bliver lagt i en variabel.  
 
 Se deconstructuring.js
 
@@ -247,6 +248,9 @@ Er stadig prototype baseret, men ligner det vi ser i java. Er syntaktisk sukker.
 ---
 
 #### RED: Provide examples with es6, running in a browser, using Babel and Webpack.  
+Arrow funktion.  
+Import/export.  
+
 Se webpack-demo  
 
 ---

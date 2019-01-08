@@ -55,7 +55,7 @@ let personInfo = function() {
     };
   };
   
-  /* let savePersonInfo = personInfo(); // savePersonInfo er nu en funktion.
+ /* let savePersonInfo = personInfo(); // savePersonInfo er nu en funktion.
   savePersonInfo.setFirstName("Bob");
   savePersonInfo.setAge(50);
-  savePersonInfo.getInfo(); */ // returner en funktion, der printer navn og alder.
+  savePersonInfo.getInfo(); */  // returner en funktion, der printer navn og alder.

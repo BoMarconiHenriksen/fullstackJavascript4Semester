@@ -1,8 +1,8 @@
 // Prototype.
 // Vi kan tilføje funktioner til prototypen af et objekt.
 
-// Når en funktion laves så tilføjes et prototype objekt til funktionen <function>.prototype.
-console.log(typeof Person.prototype);
+// Når en funktion laves så tilføjes et prototype-objekt til funktionen <function>.prototype.
+// console.log(typeof Person.prototype);
 
 // Udkommenter.
 function showName() {

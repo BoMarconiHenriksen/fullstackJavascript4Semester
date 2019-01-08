@@ -55,13 +55,13 @@ console.log(x); */
 // bind()
 // Med bind kan vi, når vi skriver vores funktion bestemmer,
 // hvad this skal være dvs ikke når vi kalder den.
-/* var a = function() {
+var a = function() {
     console.log(this);
-}.bind(1);  */// Du giver det med som this skal være. binder/låser 1 til this.
+}.bind(1);  // Du giver det med som this skal være. binder/låser 1 til this.
 
 // Lige meget, hvor vi kalder a vil den altid være 1
 /* a();
-a(); */
+a(); */ 
 
 // Det her bliver også 1.
 /* var horse = {
@@ -77,6 +77,8 @@ horse.func(); */
 
 a = a.bind(1);
 
+a(); 
+a = a.bind(2);
 a(); */
 
 // bind i vores tidligere eksempel.

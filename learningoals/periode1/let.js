@@ -20,4 +20,4 @@ function varTest() {
     console.log(y);  // 2
   };
 
-// varTest();
+varTest();
